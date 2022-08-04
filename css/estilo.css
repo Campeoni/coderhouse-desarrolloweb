@@ -123,18 +123,18 @@ body {
         top: 80px;                    
     }
 
-    .ufo-animation{
-        position: relative;
-        width: 100px;
-        height: 75px;
-        right: 100px;
-        animation-name: vuelo;
-        animation-iteration-count: infinite;
-        animation-timing-function: ease-in;
-        animation-duration: 10s;
-        animation-delay: 2s;
-        
-    }
+        .ufo-animation{
+            position: relative;
+            width: 100px;
+            height: 75px;
+            right: 100px;
+            animation-name: vuelo;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in;
+            animation-duration: 10s;
+            animation-delay: 2s;
+            
+        }
 
     .header__img__1 {
         flex-basis: 1%;
@@ -448,6 +448,9 @@ body {
         .header__div__4{
             flex-basis: 10%;
         }
+    .ufo{
+        display: none;                        
+    }
 
     .contenedor {
         grid-template-columns: 0% 100% 0%;  
@@ -762,7 +765,11 @@ body {
     .header__div__4{
         flex-basis: 0%;
     }
-        
+    
+    .ufo{
+        display: none;                        
+    }
+
     .contenedor__espacio1{
         grid-area: espacio1; 
         background-image: url(../image/estrellas.png); 
