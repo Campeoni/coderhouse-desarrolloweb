@@ -119,15 +119,21 @@ body {
 
     .ufo{
         position: absolute;
-        width: 100%; 
-        top: -50px;
+        width: 100%;  
+        top: 80px;                    
     }
 
     .ufo-animation{
-        top: -50px;
-        width: 50px;
-        height: 50px;
-
+        position: relative;
+        width: 100px;
+        height: 75px;
+        right: 100px;
+        animation-name: vuelo;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in;
+        animation-duration: 10s;
+        animation-delay: 2s;
+        
     }
 
     .header__img__1 {
@@ -907,23 +913,18 @@ body {
     100%  { transform: rotate(  0deg); }   
 }
 
-@keyframes ufo {
-    2%    { display: block; }
-    4%    { display: initial ;}
-    6%    { display: absolute;}
-    8%    { display: absolute;}
-    10%   { display: absolute;}
-    12%   { display: absolute;}
-    14%   { transform: rotate( -5deg); }
+@keyframes vuelo {
+    2%    { left:-100px; }
+    8%    { left: 200px;}
+    10%   { transform: rotate( -5deg); }
+    12%   { transform: rotate(  0deg); }
+    14%   { transform: rotate(  5deg); }
     16%   { transform: rotate(  0deg); }
-    18%   { transform: rotate(  5deg); }
-    20%   { transform: rotate(  5deg); }
-    22%   { transform: rotate(  0deg); }
-    24%   { transform: rotate( -5deg); }
-    26%   { transform: rotate(  0deg); }
-    28%   { transform: rotate(  5deg); }
-    30%   { transform: rotate(  0deg); }
-    32%   { transform: rotate( -5deg); }
-    34%   { transform: rotate(  0deg); }        
-    100%  { transform: rotate(  0deg); }    
+    18%   { transform: rotate( -5deg); }
+    20%   { transform: rotate(  0deg); }
+    22%   { transform: rotate(  5deg); }
+    24%   { transform: rotate(  0deg); }
+    26%   { width:75px ; height: 50px; }    
+    30%   { width:50px ; height: 25px; }
+    100%  { width:0px ; height: 0px; }    
 }
