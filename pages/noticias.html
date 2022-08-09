@@ -5,68 +5,71 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="shortcut icon" href="../image/sun_isologo.ico">
 		<link rel="stylesheet" href="../css/estilo.css">
+		<link rel="stylesheet" href="../css/bootstrap.min.css">
 		<title>Noticias</title>
 	</head>
 
 	<body>
 		<!-- header --> 
         <header>
-            <img class="header__img__1" src="../image/sun_isologo.ico" alt="logo sol">  
-            <div class="header__div__2"></div>
-            <div class="header__div__3">
-                <input id="menu-check" type="checkbox">
-                <label id="menu" for="menu-check">
-                    <span id="menu-abrir">&#9776;</span>
-                    <span id="menu-cerrar">X</span>
-                </label>
-                <nav class="header__div__3__nav">                
-                    <ul class="header__nav__ul">
-                        <li class="header__nav__ul__li"><a class="header__nav__ul__li__a" href="../index.html">Home</a></li>
-                        <li class="header__nav__ul__li"><a class="header__nav__ul__li__a" href="noticias.html">Noticias</a></li>
-                        <li class="header__nav__ul__li"><a class="header__nav__ul__li__a" href="que_sabemos.html">Que sabemos?</a></li>
-                        <li class="header__nav__ul__li"><a class="header__nav__ul__li__a" href="sistema_solar.html">Sistema Solar</a></li>
-                        <li class="header__nav__ul__li"><a class="header__nav__ul__li__a" href="contacto.html">Contacto</a></li>
-                        <li class="header__nav__ul__li"><a class="header__nav__ul__li__a" href="https://www.nasa.gov/"   target="_blank">Ir a la NASA</a></li>
-                        <li class="header__nav__ul__li"><a class="header__nav__ul__li__a" href="https://www.spacex.com/" target="_blank">Ir a space-X</a></li>
-                    </ul>
-                </nav>
-            </div>
+            <nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top"  style="opacity: 0.95;">
+                <div class="container-fluid">                  
+                    <img class="navbar-brand" src="../image/sun_isologo.ico" alt="logo sol"  height="40" width="30" >  
 
-            <div class="header__div__4"></div>        
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mx-auto mb-2 mb-lg-0 align-items-center">
+                            <li class="nav-item"> <a class="nav-link active sp-family-jetbrains sp-color-cont sp-item-link" aria-current="page" href="../index.html">Home</a></li>
+                            <li class="nav-item"> <a class="nav-link active sp-family-jetbrains sp-color-cont sp-item-link" aria-current="page" href="noticias.html">Noticias</a></li>
+                            <li class="nav-item"> <a class="nav-link active sp-family-jetbrains sp-color-cont sp-item-link" aria-current="page" href="que_sabemos.html">Que sabemos?</a></li>
+                            <li class="nav-item"> <a class="nav-link active sp-family-jetbrains sp-color-cont sp-item-link" aria-current="page" href="sistema_solar.html">Sistema Solar</a></li>
+                            <li class="nav-item"> <a class="nav-link active sp-family-jetbrains sp-color-cont sp-item-link" aria-current="page" href="contacto.html">Contacto</a></li>
+                            <li class="nav-item"> <a class="nav-link active sp-family-jetbrains sp-color-cont sp-item-link" aria-current="page" target="_blank" href="https://www.nasa.gov/">Ir a la NASA </a></li>                                
+                            <li class="nav-item"> <a class="nav-link active sp-family-jetbrains sp-color-cont sp-item-link" aria-current="page" target="_blank" href="https://www.spacex.com/">Ir a space-X </a></li>                                                        
+                        </ul>
+                    </div>
+                </div>
+            </nav>     
         </header> 
+
 		<div class="ufo">
 			<img class="ufo-animation" src="../image/ufo.png" alt="ovni">
 		</div>
-		<div class="contenedor">
-			<!-- información de la pagina -->
-			<div class="contenedor__espacio1">                
+
+        <div class="cointainer-sm min-vh-100 d-flex flex-column sp-background-image " style="padding-top: 70px;">
+            <div class="row g-0 flex-grow-1">
+                <!-- información de la pagina -->   
+            <div class="col-1">                
             </div>  
 
-			<main class="contenedor__main">
-				<div class="main__div__1">
+			<main class="col-10 ">
+				<div class="">                        
 				</div>
 
 				<div class="main__div__2">            
 					<section>
-						<h2>Noticias</h2>
+						<h2 class="sp-color-head sp-family-roboto">Noticias</h2>
 						<article >
 							<ol>
-								<li class="main__section__article__ol__li">La tierra desde el espacio<br>
-									<p>Todo lo que sucede en la Estación Espacial Internacional gira en torno a una cosa: ¡la Tierra, dieciséis veces al día! Entonces, para el Día de la Tierra 2021, la NASA ofrece un regalo que no puede obtener en ningún otro lugar con esta vista pausada de nuestro planeta natal, desde 250 millas de altura, representada en un extraordinario video de ultra alta definición. Dale al play, relájate y disfruta. Este metraje 4K se grabó entre 2019 y 2020.</p>
+								<li class="sp-color-head sp-family-roboto">La tierra desde el espacio<br>
+									<p class="sp-color-cont sp-family-jetbrains">Todo lo que sucede en la Estación Espacial Internacional gira en torno a una cosa: ¡la Tierra, dieciséis veces al día! Entonces, para el Día de la Tierra 2021, la NASA ofrece un regalo que no puede obtener en ningún otro lugar con esta vista pausada de nuestro planeta natal, desde 250 millas de altura, representada en un extraordinario video de ultra alta definición. Dale al play, relájate y disfruta. Este metraje 4K se grabó entre 2019 y 2020.</p>
 									<article>
-										<iframe class="noticias-centro" width="1300" height="356" src="https://www.youtube.com/embed/ElxVZL526o8" title="4K Earth Views Extended Cut for Earth Day 2021" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+										<iframe class="border border-white" width="1300" height="356" src="https://www.youtube.com/embed/ElxVZL526o8" title="4K Earth Views Extended Cut for Earth Day 2021" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 									</article>
 								</li>
-								<li class="main__section__article__ol__li">fases de la Luna <br>
-									<p>Esta visualización 4K muestra la fase y la libración de la Luna a intervalos de una hora a lo largo de 2022, vista desde el hemisferio norte. Cada cuadro representa una hora. Además, esta visualización muestra la posición de la órbita de la Luna, los puntos sub-terrestres y subsolares, y la distancia desde la Tierra a escala real. Los cráteres cerca del terminador están etiquetados, al igual que los sitios de aterrizaje de Apolo, maria y otras características del albedo a la luz del sol.</p>
+								<li class="sp-color-head sp-family-roboto">fases de la Luna <br>
+									<p class="sp-color-cont sp-family-jetbrains">Esta visualización 4K muestra la fase y la libración de la Luna a intervalos de una hora a lo largo de 2022, vista desde el hemisferio norte. Cada cuadro representa una hora. Además, esta visualización muestra la posición de la órbita de la Luna, los puntos sub-terrestres y subsolares, y la distancia desde la Tierra a escala real. Los cráteres cerca del terminador están etiquetados, al igual que los sitios de aterrizaje de Apolo, maria y otras características del albedo a la luz del sol.</p>
 									<article>
-										<iframe class="noticias-centro" width="1300" height="356" src="https://www.youtube.com/embed/c4Xky6tlFyY" title="Moon Phases 2022 – Northern Hemisphere – 4K" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+										<iframe class="border border-white" width="1300" height="356" src="https://www.youtube.com/embed/c4Xky6tlFyY" title="Moon Phases 2022 – Northern Hemisphere – 4K" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 									</article>	
 								</li>
-								<li class="main__section__article__ol__li">Lanzamiento aterrizaje Falcon 9 <br>
-									<p> Este espectacular video del proceso completo de una lanzamiento y aterrizaje del cohete Falcon 9 de SpaceX, este video fue grabado con cámaras especiales de largo alcance en la misión CRS-13 en 2017.</p>
+								<li class="sp-color-head sp-family-roboto">Lanzamiento aterrizaje Falcon 9 <br>
+									<p class="sp-color-cont sp-family-jetbrains"> Este espectacular video del proceso completo de una lanzamiento y aterrizaje del cohete Falcon 9 de SpaceX, este video fue grabado con cámaras especiales de largo alcance en la misión CRS-13 en 2017.</p>
 									<article>
-										<iframe class="noticias-centro" width="1300" height="356" src="https://www.youtube.com/embed/6DWyvU154Wc" title="Lanzamiento y aterrizaje COMPLETO del cohete Falcon 9 en 4K60" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+										<iframe class="border border-white" width="1300" height="356" src="https://www.youtube.com/embed/6DWyvU154Wc" title="Lanzamiento y aterrizaje COMPLETO del cohete Falcon 9 en 4K60" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 									</article>	
 								</li>
 							</ol>
@@ -76,33 +79,35 @@
 				</div>
 
 				<div class="main__div__3">
-					<img  class="main__div__3__img" src="../image/rocket.png" alt="rocket">	
+					<!-- <img  class="main__div__3__img" src="../image/rocket.png" alt="rocket">	 -->
 				</div>
 				
 			</main>
 
-            <div class="contenedor__espacio2">                
+                <div class="col-1">                
+                </div>
             </div>
 
-			<!-- footer --> 
-			<footer class="contenedor__footer">
-				<div class="footer__div__1">
-					<a class="footer__div__1__facebook" href="http://facebook.com"  target="_blank" >
-						<img class="footer__div__a__facebook" src="../image/facebook_logo.png" alt="facebook_logo" /> 
-					</a>
-				</div>
-				<div class="footer__div__2">
-					<a class="footer__div__1__instagram" href="http://instagram.com"  target="_blank" > 
-						<img class="footer__div__a__instagram" src="../image/instagram_logo.png" alt="instagram_logo" /> 
-					</a>
-				</div>	
-				<div class="footer__div__3">
-					<p class="footer__div__3__p"> Copyright &copy; 2022 "hacia el infinito", todos los derechos reservados.</p>			
-				</div>
-				<div class="footer__div__4">			
-				</div>            
-			</footer>
-		</div>
+            <!-- footer --> 
+            <footer class="d-flex bg-dark align-items-center" style="height: 15%;">
+                <div class="mx-1">
+                    <a class="" href="http://facebook.com"  target="_blank" > 
+                        <img class="" src="../image/facebook_logo.png" alt="facebook_logo" /> 
+                    </a>
+                </div>
+                <div class="mx-1">
+                    <a class="" href="http://instagram.com"  target="_blank" > 
+                        <img class="" src="../image/instagram_logo.png" alt="instagram_logo" /> 
+                    </a>
+                </div>    
+                
+                <p class="sp-family-jetbrains sp-color-cont mx-auto"> Copyright &copy; 2022 "hacia el infinito", todos los derechos reservados.</p>			
+                
+                <div class="">    
+                </div>            
+            </footer>
+        </div>    
+		<script src="../js/bootstrap.min.js"></script>
 	</body>
 
 </html>
