@@ -28,12 +28,22 @@ body {
     font-family: 'jetbrains' !important;
 }    
 
+.sp-color-head{
+    color: #84c3eb !important;
+}
+
 .sp-color-cont{
     color: #f0c080 !important;
 }
 
-.sp-color-head{
-    color: #84c3eb !important;
+.sp-color-sky{
+    background-color: #000000;  
+    background-image: url(../image/estrellas.png);      
+}
+
+.sp-color-foot{
+    color: #000000 !important;
+    font-weight: bold ;
 }
 
 td, th{
@@ -51,7 +61,9 @@ td, th{
 }
 
 .sp-background-luna {
+    background-color: #bbb8b8;       
     background-image: url(../image/suelo.png); 
+    background-repeat: repeat;    
 }
 
 /* ================================================================= */
@@ -71,8 +83,8 @@ td, th{
     }
 
     .sp-img-sistemaSolar{
-        width: 650px;
-        height: 450px;     
+        width: 800px;
+        height: 450px;  
     }
 
     p{
@@ -96,12 +108,77 @@ td, th{
             animation-iteration-count: infinite;
             animation-timing-function: ease-in;
             animation-duration: 10s;
-            animation-delay: 2s;
-            
+            animation-delay: 2s;            
+        }
+    
+    .sp-title{
+        font-size: 1.5rem; 
+    }
+
+    .main__div__2__form__input__nombre{
+        width: 250px;    
+        display : block;        
+    }
+    
+    .main__div__2__form__input__mail{
+        width: 250px;
+        display: block;
+    }
+
+    .main__div__2__form__input__fecha{
+        display: block;
+    }
+
+    textarea{
+        height: 100px;
+        width:  350px;
+    }
+
+    .main__div__2__p-tipDoc{
+        margin-bottom: 5px;
+    }
+
+    .main__div__2__input-dni{
+        margin-left: 9px;    
+    }
+
+    .main__div__2__div{
+        display: flex;  
+        justify-content: left;     
+    }
+    
+    .main__div__2__form__input__nro-doc{
+        display: block;
+    }
+
+    .main__div__2__div__boton{
+        padding-left: 25px;
+        padding-right: 25px;
+        padding-top: 5px;
+        padding-bottom: 5px;   
+        margin-bottom: 20px; 
+    }  
+
+    .sp-cointainer__col3__rocket {
+        position: relative;
+        flex-basis: 20%;
+    }
+        .sp-cointainer__col3__rocket__img{            
+            position: absolute;        
+            bottom: -25px; 
+            left: 40%;
+            width: 45px;        
+            right: 45px;   
+            z-index: 9999;                
         }
 
+        .sp-cointainer__col3__rocket__img:hover {
+            animation-name: despegue;             
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            animation-duration: 2s;                
+        }   
 }
-
 
 /* ================================================================= */
 /* ============================ Tablet ============================= */
@@ -120,8 +197,8 @@ td, th{
     }
 
     .sp-img-sistemaSolar{
-        width: 350px;
-        height: 250px;  
+        width: 600px;
+        height: 300px; 
     }
 
     p{
@@ -134,11 +211,59 @@ td, th{
         display: none;                        
     }
 
+    .sp-title{
+        font-size: 1.5rem; 
+    }
+
+    .main__div__2__form__input__nombre{
+        width: 250px;    
+        display : block;        
+    }
+    
+    .main__div__2__form__input__mail{
+        width: 250px;
+        display: block;
+    }
+
+    .main__div__2__form__input__fecha{
+        display: block;
+    }
+
+    textarea{
+        height: 200px;
+        width:  300px;
+    }
+
+    .main__div__2__p-tipDoc{
+        margin-bottom: 5px;
+    }
+
+    .main__div__2__input-dni{
+        margin-left: 10px;    
+    }
+
+    
+    .main__div__2__form__input__nro-doc{
+        display: block;
+    }
+
+    .main__div__2__div{
+        display: flex;  
+        justify-content: left;     
+    }
+    
+    .main__div__2__div__boton{
+        padding-left: 25px;
+        padding-right: 25px;
+        padding-top: 5px;
+        padding-bottom: 5px;  
+        margin-bottom: 20px;  
+    }  
+
+    .sp-cointainer__col3__rocket{
+        display: none;
+    }
 }
-
-
-
-
 
 
 /* ================================================================= */
@@ -147,7 +272,6 @@ td, th{
 /*smartphones [xxxpx -> 426px]*/
 
 @media (max-width: 426px){
-
     iframe{
         margin-bottom: 15px;
         margin-top: 15px;
@@ -157,31 +281,81 @@ td, th{
         width: 270px;
         height: 200px;       
     }
+
     .sp-img-sistemaSolar{
-        width: 270px;
-        height: 200px;  
+        width: 280px;
+        height: 150px;  
     }
 
     .ufo{
         display: none;                        
     }
 
-    .main__div__3__img{
+    .sp-container-col1{
         display: none;
     }
 
+    .sp-container-col2{
+        margin-left: 13px;
+    }
+
+    .sp-title{
+        font-size: 1rem; 
+    }
+
+    .main__div__2__form__input__nombre{
+        width: 250px;    
+        display : block;        
+    }
+    
+    .main__div__2__form__input__mail{
+        width: 250px;
+        display: block;
+    }
+
+    .main__div__2__form__input__fecha{
+        display: block;
+    }
+
+    textarea{
+        height: 100px;
+        width:  250px;
+    }
+
+    .main__div__2__p-tipDoc{
+        margin-bottom: 5px;
+    }
+
+    .main__div__2__input-dni{
+        margin-left: 6px;    
+    }
+
+    .main__div__2__div{
+        display: flex;  
+        justify-content: center;     
+    }
+    
+    .main__div__2__form__input__nro-doc{
+        display: block;
+    }
+
+    .main__div__2__div__boton{
+        padding-left: 25px;
+        padding-right: 25px;
+        padding-top: 5px;
+        padding-bottom: 5px;    
+        margin-bottom: 20px;
+    }  
+    
+    .sp-cointainer__col3__rocket{
+        display: none;
+    }
 }
-
-
-
-
 
 
 /* ================================================================= */
 /* ======================= Animaciones ============================= */
 /* ================================================================= */
-
-/* 
 @keyframes despegue {
     2%    { transform: rotate(  5deg); display: block; }
     4%    { transform: rotate(  0deg); display: i;}
@@ -202,7 +376,7 @@ td, th{
     34%   { transform: rotate(  0deg); }        
     100%  { transform: rotate(  0deg); }   
 }
-*/
+
 @keyframes vuelo {
     2%    { left:-100px; }
     8%    { left: 50px;}
