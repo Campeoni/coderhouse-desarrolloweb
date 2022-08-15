@@ -68,7 +68,9 @@ td, th {
   p {
     font-family: "jetbrains";
     color: #f0c080;
-    font-size: 1rem; }
+    font-size: 1.2rem; }
+  li p::first-letter {
+    font-size: 2.5rem; }
   .ufo {
     position: absolute;
     width: 100%;
@@ -140,13 +142,15 @@ td, th {
     border: solid 1px #4b4b4b;
     width: 350px;
     height: 250px; }
-  .sp-img-sistemaSolar {
-    width: 600px;
-    height: 300px; }
   p {
     font-family: "jetbrains";
     color: #f0c080;
-    font-size: 0.8rem; }
+    font-size: 1rem; }
+  li p::first-letter {
+    font-size: 2rem; }
+  .sp-img-sistemaSolar {
+    width: 600px;
+    height: 300px; }
   .ufo {
     display: none; }
   .sp-title {
@@ -193,6 +197,12 @@ td, th {
     border: solid 1px #4b4b4b;
     width: 270px;
     height: 200px; }
+  p {
+    font-family: "jetbrains";
+    color: #f0c080;
+    font-size: 0.8rem; }
+  li p::first-letter {
+    font-size: 1.5rem; }
   .sp-img-sistemaSolar {
     width: 280px;
     height: 150px; }
