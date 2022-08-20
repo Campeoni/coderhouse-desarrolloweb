@@ -6,6 +6,10 @@
   font-family: "JetBrains";
   src: url("JetBrainsMono.ttf"); }
 
+/* Mixin */
+.sp-background-img, .sp-color-sky, .sp-background-image {
+  background-image: url(../image/estrellas.png); }
+
 /* reseteo de la web con el selector universal*/
 * {
   margin: 0;
@@ -28,8 +32,7 @@ body {
   color: #f0c080 !important; }
 
 .sp-color-sky {
-  background-color: #000000;
-  background-image: url(../image/estrellas.png); }
+  background-color: #000000; }
 
 .sp-color-foot {
   color: #000000 !important;
@@ -42,9 +45,6 @@ td, th {
   color: #ffffff !important;
   font-weight: bolder;
   text-decoration: underline; }
-
-.sp-background-image {
-  background-image: url(../image/estrellas.png); }
 
 .sp-background-luna {
   background-color: #bbb8b8;
@@ -59,6 +59,8 @@ td, th {
   article iframe {
     margin-bottom: 15px;
     margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
     border: solid 1px #4b4b4b;
     width: 650px;
     height: 450px; }
@@ -96,8 +98,8 @@ td, th {
   .main__div__2__form__input__fecha {
     display: block; }
   textarea {
-    height: 100px;
-    width: 350px; }
+    width: 500px;
+    height: 350px; }
   .main__div__2__p-tipDoc {
     margin-bottom: 5px; }
   .main__div__2__input-dni {
@@ -164,8 +166,8 @@ td, th {
   .main__div__2__form__input__fecha {
     display: block; }
   textarea {
-    height: 200px;
-    width: 300px; }
+    width: 200px;
+    height: 300px; }
   .main__div__2__p-tipDoc {
     margin-bottom: 5px; }
   .main__div__2__input-dni {
@@ -223,8 +225,8 @@ td, th {
   .main__div__2__form__input__fecha {
     display: block; }
   textarea {
-    height: 100px;
-    width: 250px; }
+    width: 100px;
+    height: 250px; }
   .main__div__2__p-tipDoc {
     margin-bottom: 5px; }
   .main__div__2__input-dni {

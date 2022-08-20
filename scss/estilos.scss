@@ -9,6 +9,41 @@
     src: url("JetBrainsMono.ttf"); 
 } 
 
+/* Mixin */
+    
+@mixin width-display($width, $display) {
+        width: $width;    
+        display : $display;        
+    }
+
+@mixin width-height($width, $height) {
+        width: $width;    
+        height : $height;        
+    }    
+
+@mixin iframe-mb-mt-ml-mr-border-width-height($margin-bottom, $margin-top, $margin-left, $margin-right, $border, $with, $height) {
+    margin-bottom: $margin-bottom;
+    margin-top: $margin-top;
+    margin-left: $margin-left; 
+    margin-right: $margin-right;
+    border: $border;
+    width: $with;
+    height: $height;   
+    }
+
+@mixin boton {
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 5px;
+    padding-bottom: 5px;    
+    margin-bottom: 20px;
+}    
+
+.sp-background-img {
+    background-image: url(../image/estrellas.png); 
+}
+
+
 /* reseteo de la web con el selector universal*/
 *{
     margin:0;
@@ -36,9 +71,9 @@ body {
     color: $color-contenido !important;
 }
 
-.sp-color-sky{
+.sp-color-sky{    
     background-color: #000000;  
-    background-image: url(../image/estrellas.png);      
+    @extend .sp-background-img;    
 }
 
 .sp-color-foot{
@@ -52,14 +87,14 @@ td, th{
 
 .sp-item-link{
     &:hover{
-            color: #ffffff !important;
+    color: #ffffff !important;
     font-weight: bolder;
     text-decoration: underline;
     }
 }
 
 .sp-background-image {
-    background-image: url(../image/estrellas.png); 
+    @extend .sp-background-img;  
 }
 
 .sp-background-luna {
@@ -76,17 +111,12 @@ td, th{
 @media (min-width: 769px){
     article{
         iframe{
-            margin-bottom: 15px;
-            margin-top: 15px;
-            border: solid 1px rgb(75, 75, 75);
-            width: 650px;
-            height: 450px;        
+            @include iframe-mb-mt-ml-mr-border-width-height(15px, 15px, auto, auto, solid 1px rgb(75, 75, 75), 650px, 450px);            
         }
     }
 
     .sp-img-sistemaSolar{
-        width: 800px;
-        height: 450px;  
+        @include width-height(800px ,450px);
     }
 
     p{
@@ -124,13 +154,11 @@ td, th{
     }
 
     .main__div__2__form__input__nombre{
-        width: 250px;    
-        display : block;        
+        @include width-display(250px, block);    
     }
     
     .main__div__2__form__input__mail{
-        width: 250px;
-        display: block;
+        @include width-display(250px, block);  
     }
 
     .main__div__2__form__input__fecha{
@@ -138,8 +166,7 @@ td, th{
     }
 
     textarea{
-        height: 100px;
-        width:  350px;
+        @include width-height(500px ,350px);
     }
 
     .main__div__2__p-tipDoc{
@@ -160,11 +187,7 @@ td, th{
     }
 
     .main__div__2__div__boton{
-        padding-left: 25px;
-        padding-right: 25px;
-        padding-top: 5px;
-        padding-bottom: 5px;   
-        margin-bottom: 20px; 
+        @include boton;
     }  
 
     .sp-cointainer__col3__rocket {
@@ -196,13 +219,7 @@ td, th{
 @media (max-width: 768px){
     article{
         iframe{
-            margin-bottom: 15px;
-            margin-top: 15px;
-            margin-left: auto;
-            margin-right: auto;
-            border: solid 1px rgb(75, 75, 75);
-            width: 350px;
-            height: 250px;        
+            @include iframe-mb-mt-ml-mr-border-width-height(15px, 15px, auto, auto, solid 1px rgb(75, 75, 75), 350px, 250px);                                      
         }
     }
 
@@ -219,8 +236,7 @@ td, th{
     }
 
     .sp-img-sistemaSolar{
-        width: 600px;
-        height: 300px; 
+        @include width-height(600px ,300px);
     }
 
     
@@ -233,13 +249,11 @@ td, th{
     }
 
     .main__div__2__form__input__nombre{
-        width: 250px;    
-        display : block;        
+        @include width-display(250px, block);      
     }
     
     .main__div__2__form__input__mail{
-        width: 250px;
-        display: block;
+        @include width-display(250px, block);  
     }
 
     .main__div__2__form__input__fecha{
@@ -247,8 +261,7 @@ td, th{
     }
 
     textarea{
-        height: 200px;
-        width:  300px;
+        @include width-height(200px ,300px);
     }
 
     .main__div__2__p-tipDoc{
@@ -270,11 +283,7 @@ td, th{
     }
     
     .main__div__2__div__boton{
-        padding-left: 25px;
-        padding-right: 25px;
-        padding-top: 5px;
-        padding-bottom: 5px;  
-        margin-bottom: 20px;  
+        @include boton;
     }  
 
     .sp-cointainer__col3__rocket{
@@ -291,13 +300,7 @@ td, th{
 @media (max-width: 426px){
     article{
         iframe{
-            margin-bottom: 15px;
-            margin-top: 15px;
-            margin-left: auto;
-            margin-right: auto;
-            border: solid 1px rgb(75, 75, 75);
-            width: 270px;
-            height: 200px;       
+            @include iframe-mb-mt-ml-mr-border-width-height(15px, 15px, auto, auto, solid 1px rgb(75, 75, 75), 270px, 200px);
         }
     }
 
@@ -314,8 +317,7 @@ td, th{
     }
 
     .sp-img-sistemaSolar{
-        width: 280px;
-        height: 150px;  
+        @include width-height(280px ,150px);
     }
 
     .ufo{
@@ -335,13 +337,11 @@ td, th{
     }
 
     .main__div__2__form__input__nombre{
-        width: 250px;    
-        display : block;        
+        @include width-display(250px, block);      
     }
     
     .main__div__2__form__input__mail{
-        width: 250px;
-        display: block;
+        @include width-display(250px, block);  
     }
 
     .main__div__2__form__input__fecha{
@@ -349,8 +349,7 @@ td, th{
     }
 
     textarea{
-        height: 100px;
-        width:  250px;
+        @include width-height(100px ,250px);
     }
 
     .main__div__2__p-tipDoc{
@@ -371,11 +370,7 @@ td, th{
     }
 
     .main__div__2__div__boton{
-        padding-left: 25px;
-        padding-right: 25px;
-        padding-top: 5px;
-        padding-bottom: 5px;    
-        margin-bottom: 20px;
+        @include boton;
     }  
     
     .sp-cointainer__col3__rocket{
