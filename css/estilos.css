@@ -99,7 +99,7 @@ td, th {
     display: block; }
   textarea {
     width: 500px;
-    height: 350px; }
+    height: 300px; }
   .main__div__2__p-tipDoc {
     margin-bottom: 5px; }
   .main__div__2__input-dni {
@@ -166,8 +166,8 @@ td, th {
   .main__div__2__form__input__fecha {
     display: block; }
   textarea {
-    width: 200px;
-    height: 300px; }
+    width: 400px;
+    height: 250px; }
   .main__div__2__p-tipDoc {
     margin-bottom: 5px; }
   .main__div__2__input-dni {
@@ -225,8 +225,8 @@ td, th {
   .main__div__2__form__input__fecha {
     display: block; }
   textarea {
-    width: 100px;
-    height: 250px; }
+    width: 300px;
+    height: 200px; }
   .main__div__2__p-tipDoc {
     margin-bottom: 5px; }
   .main__div__2__input-dni {
