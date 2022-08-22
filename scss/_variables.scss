@@ -1,5 +1,17 @@
+/*MAPS */
+$colores: ( /*Declaramos nuestro mapa*/
+        header: #84c3eb,
+        contenido:  #f0c080,
+        body-background:  #000000,        
+        footer-color-text:  #000000,
+        footer-background:  #bbb8b8
+);
+
 /* Variables*/
-$color-header:#84c3eb;
-$color-contenido: #f0c080;
+$color-header: map-get($colores, header);
+$color-contenido: map-get($colores, contenido);
+$color-background: map-get($colores, body-background);
+$color-background-footer: map-get($colores, footer-background);
+$color-footer-text: map-get($colores, footer-color-text);
 $fuente1: 'jetbrains';
 $fuente2: 'roboto';

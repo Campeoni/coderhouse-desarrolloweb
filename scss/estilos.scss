@@ -1,5 +1,6 @@
 @import "variables.scss";
 
+
 /* Importo una fuente de googlefonts */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,500&display=swap');
 
@@ -9,8 +10,7 @@
     src: url("JetBrainsMono.ttf"); 
 } 
 
-/* Mixin */
-    
+/* Mixin */    
 @mixin width-display($width, $display) {
         width: $width;    
         display : $display;        
@@ -51,7 +51,7 @@
 }
 
 body {
-    background: linear-gradient(to bottom right, #cd7f38 0%, #000000 15%);
+    background: linear-gradient(to bottom right, #cd7f38 0%, $color-background 15%);
     /* min-height: 100%;     */
 }
 
@@ -64,7 +64,7 @@ body {
 }    
 
 .sp-color-head{
-    color: $color-header !important;
+    color: $color-header !important;    
 }
 
 .sp-color-cont{
@@ -72,12 +72,12 @@ body {
 }
 
 .sp-color-sky{    
-    background-color: #000000;  
+    background-color: $color-background; 
     @extend .sp-background-img;    
 }
 
 .sp-color-foot{
-    color: #000000 !important;
+    color: $color-footer-text !important;
     font-weight: bold ;
 }
 
@@ -98,7 +98,7 @@ td, th{
 }
 
 .sp-background-luna {
-    background-color: #bbb8b8;       
+    background-color: $color-background-footer;       
     background-image: url(../image/suelo.png); 
     background-repeat: repeat;    
 }
