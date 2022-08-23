@@ -2,7 +2,8 @@
 $colores: ( /*Declaramos nuestro mapa*/
         header: #84c3eb,
         contenido:  #f0c080,
-        body-background:  #000000,        
+        body-background:  #000000,  
+        card-background-text:  #1a1919,      
         footer-color-text:  #000000,
         footer-background:  #bbb8b8
 );
@@ -11,6 +12,7 @@ $colores: ( /*Declaramos nuestro mapa*/
 $color-header: map-get($colores, header);
 $color-contenido: map-get($colores, contenido);
 $color-background: map-get($colores, body-background);
+$color-background-cards: map-get($colores, card-background-text);
 $color-background-footer: map-get($colores, footer-background);
 $color-footer-text: map-get($colores, footer-color-text);
 $fuente1: 'jetbrains';
