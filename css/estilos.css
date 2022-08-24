@@ -17,7 +17,7 @@
   padding: 0; }
 
 body {
-  background: linear-gradient(to bottom right, #cd7f38 0%, #000000 15%);
+  background: linear-gradient(to bottom right, #cd7f38 0%, #16161d 15%);
   /* min-height: 100%;     */ }
 
 .sp-family-roboto {
@@ -33,7 +33,7 @@ body {
   color: #f0c080 !important; }
 
 .sp-color-sky {
-  background-color: #000000; }
+  background-color: #16161d; }
 
 .sp-color-foot {
   color: #000000 !important;
@@ -135,7 +135,8 @@ td, th {
     justify-content: center; }
   .main__cards-text {
     color: #f0c080;
-    font-family: "jetbrains"; }
+    font-family: "jetbrains";
+    font-size: 1rem; }
   .main__bordedr-cards {
     border-style: solid;
     border-width: 2px;

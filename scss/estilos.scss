@@ -39,6 +39,30 @@
     margin-bottom: 20px;
 }    
 
+@mixin cards-background-text {
+    background-color: $color-background-cards;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+@mixin cards-text ($size) {
+    color: $color-contenido;
+    font-family: $fuente1;
+    font-size: $size; 
+}
+
+@mixin bordedr-cards{
+    border-style: solid;
+    border-width: 2px;
+    border-color: white;  
+    margin: 2px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
 .sp-background-img {
     background-image: url(../image/estrellas.png); 
 }
@@ -203,26 +227,17 @@ td, th{
         border-width: 1px;
         border-color: white;
     }
+
     .main__cards-background-text{
-        background-color: $color-background-cards;
-        width: 100%;
-        display: flex;
-        justify-content: center;
+        @include cards-background-text;
     }
 
     .main__cards-text{
-        color: $color-contenido;
-        font-family: $fuente1;
+        @include cards-text(1rem);
     }
 
     .main__bordedr-cards{
-        border-style: solid;
-        border-width: 2px;
-        border-color: white;  
-        margin: 2px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        @include bordedr-cards;
     }
 
     .sp-cointainer__col3__rocket {
@@ -334,28 +349,17 @@ td, th{
         border-width: 1px;
         border-color: white;
     }
+
     .main__cards-background-text{
-        background-color: $color-background-cards;
-        width: 100%;
-        display: flex;
-        justify-content: center;
+        @include cards-background-text;
     }
 
     .main__cards-text{
-        color: $color-contenido;
-        font-family: $fuente1;
-        font-size: 0.5rem; 
-
+        @include cards-text(0.5rem);
     }
 
     .main__bordedr-cards{
-        border-style: solid;
-        border-width: 2px;
-        border-color: white;  
-        margin: 2px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        @include bordedr-cards;
     }
 
     .sp-cointainer__col3__rocket{
@@ -458,29 +462,18 @@ td, th{
         border-width: 1px;
         border-color: white;
     }
+
     .main__cards-background-text{
-        background-color: $color-background-cards;
-        width: 100%;
-        display: flex;
-        justify-content: center;
+        @include cards-background-text;
     }
 
     .main__cards-text{
-        color: $color-contenido;
-        font-family: $fuente1;
-        font-size: 0.3rem; 
-
+        @include cards-text(0.3rem);
     }
 
     .main__bordedr-cards{
-        border-style: solid;
-        border-width: 2px;
-        border-color: white;  
-        margin: 2px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }    
+        @include bordedr-cards;
+    } 
     
     .sp-cointainer__col3__rocket{
         display: none;
