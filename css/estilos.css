@@ -39,6 +39,9 @@ body {
   color: #000000 !important;
   font-weight: bold; }
 
+.footer__p {
+  background-color: #bbb8b8de; }
+
 td, th {
   color: #f0c080 !important; }
 
@@ -53,7 +56,7 @@ td, th {
   background-repeat: repeat; }
 
 input:invalid {
-  background-color: rgba(53, 252, 14, 0.178); }
+  background-color: rgba(255, 251, 0, 0.699); }
 
 /* ================================================================= */
 /* ========================= Desktop / Laptop ====================== */
